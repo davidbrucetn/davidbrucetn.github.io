@@ -289,14 +289,45 @@ main > section {
 
 .div__text__container1 {
   position: relative;
-  top: 40vh;
+  top: 25vh;
   color: rgba(235, 231, 231);
-  padding: 10px 0;
+  padding: 10px 10px;
   text-align: justify;
   height: auto;
   width: 100%;
   margin: 0;
   z-index: 1;
+}
+.div__center__box1 {
+  position: relative;
+  color: antiquewhite;
+  top: -4vh;
+  width: 80vw;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1em 1em;
+  border-radius: 3em;
+  z-index: 1;
+  opacity: 1;
+}
+.div__center__box1::after {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../images/dusk.jpg");
+  /* background-image: url("../images/dusk.jpg"); */
+  background-size: cover;
+  top: 10vh;
+  height: auto;
+  opacity: 0.6;
+  padding: 1em 1em;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  border-radius: 3em;
+  z-index: -1;
 }
 
 .div__text__container2 {
@@ -318,36 +349,6 @@ main > section {
   /* background-image: url("../images/dusk.jpg"); */
   background-size: cover;
   opacity: 0.8;
-  content: "";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  border-radius: 3em;
-  z-index: -1;
-}
-
-.div__center__box1 {
-  position: relative;
-  color: antiquewhite;
-  top: -4vh;
-  width: 80vw;
-  text-align: center;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 1em 0;
-  border-radius: 3em;
-  z-index: 1;
-  opacity: 1;
-}
-
-.div__center__box1::after {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("../images/dusk.jpg");
-  /* background-image: url("../images/dusk.jpg"); */
-  background-size: cover;
-  opacity: 0.6;
   content: "";
   top: 0;
   left: 0;

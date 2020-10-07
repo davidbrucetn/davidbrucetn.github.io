@@ -3,11 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/index.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <link rel="stylesheet" href="./styles/index.css" type="text/css" />
 
     <title>Portfolio</title>
     <style></style>
@@ -32,39 +39,45 @@
         <div id="wrapper">
           <main>
             <section id="home" class="content up">
-              <div class="bgimg-1"></div>
-              <div class="div__transparent">
-                <div class="div__text__container">
-                  <h3 style="text-align: center">David W. Bruce</h3>
-                  <p>
-                    In the beginning, it was a four year tour in the US Army
-                    that sparked my interest in IT. Since that time, the path
-                    has been rich and varied: working with and developing
-                    Windows client/server database applications, installing and
-                    managing Linux/Windows integrated services, developing HL7
-                    interfaces for laboratories, and most recently, working with
-                    React and JavaScript to develop front-end web apps.
-                  </p>
+              <div class="bgimg-1">
+                <div class="div__transparent">
+                  <div class="div__text__container1">
+                    <div class="div__center__box1">
+                      <h3 style="text-align: center">David W. Bruce</h3>
+                      <h4>
+                        “Happiness is not a matter of intensity but of balance
+                        and order and rhythm and harmony.” – Thomas Merton
+                      </h4>
+                      <p>
+                        Through the years, I've worked quite an array of jobs,
+                        from my time as a young adult welding, installing truck
+                        accessories, and making dentures to a four year stint in
+                        the US Army Signal Corps that inspired me to go back to
+                        school and pursue a career in IT that has almost been
+                        just as varied.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="bgimg-2"></div>
               <div class="div__transparent">
-                <div class="div__text__container">
-                  <h3 style="text-align: center">Moving Forward</h3>
+                <div class="div__text__container2">
+                  <div class="div__center__box2">
+                    <h3 style="text-align: center">Moving Forward</h3>
 
-                  <div>
-                    <p>
-                      I signed on with Nashville Software School this year,
-                      enrolling in the Full Stack C# Boot Camp, so I could
-                      update my skill set, work with cloud technologies, and
-                      leverage full functionality from front end to back end
-                      technologies. It's exciting to find myself not only
-                      current, but ahead of the game. I am now ready for a pure
-                      development role with a forward-thinking organization that
-                      works full stack cloud-based apps, SaaS,
-                      software-enabled/dependent services, or Healthcare
-                      management applications..
-                    </p>
+                    <div>
+                      <p>
+                        After a recent five year run as a full time programmer
+                        writing HL7 interfaces, I decided to update my skill set
+                        at Nashville Software School, so I could contribute to a
+                        modern development environment using leading edge
+                        technologies. My key to stoking the IT fires for so long
+                        has been maintaining a healthy balance between outdoor
+                        pursuits, like hiking with my three dogs, canoing,
+                        frequent walks at the park next door, and my career.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -73,7 +86,6 @@
             <section id="about" class="content left">
               <article class="article__about">
                 <div class="image__resume">
-                 
                   <object
                     data="./images/David Bruce - Resume.pdf"
                     type="application/pdf"
@@ -102,7 +114,30 @@
         </div>
       </div>
 
-      <footer class="body__footer">Hey I'm a Footer</footer>
+      <footer class="body__footer">
+        <div class="div__footer--line">
+          <a
+            id="link__resume"
+            href="./images/David Bruce - Resume.pdf"
+            target="_blank"
+            title="David's Resume"
+            ><i class="fa fa-file-pdf-o" aria-hidden="true"></i
+          ></a>
+          <a
+            href="https://github.com/davidbrucetn"
+            target="_blank"
+            title="David's Github"
+            ><i class="fa fa-github" aria-hidden="true"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/davidbrucetn/"
+            target="_blank"
+            title="David's LinkedIn"
+            ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="div__footer--line"></div>
+      </footer>
     </div>
     <script>
       // just querying the DOM...like a boss!

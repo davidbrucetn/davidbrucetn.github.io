@@ -258,12 +258,8 @@ main > section {
   transition: transform 0.6s ease, -webkit-transform 0.6s ease;
 }
 
-/* Footer */
-.body__footer {
-  flex: 2;
-  display: flex;
-  flex-direction: column-reverse;
-  color: #0088a9;
+.body__footer > a {
+  color: #dededf;
 }
 
 .bgimg-1,
@@ -281,7 +277,7 @@ main > section {
 
 .bgimg-1 {
   background-image: url("../images/dusk.jpg");
-  height: 70%;
+  height: 100%;
   opacity: 0.8;
 }
 
@@ -291,12 +287,126 @@ main > section {
   opacity: 0.8;
 }
 
-.div__text__container {
+.div__text__container1 {
+  position: relative;
+  top: 40vh;
   color: rgba(235, 231, 231);
-  background: rgba(100, 100, 100, 0.1);
-  text-align: center;
-  padding: 50px 80px;
+  padding: 10px 0;
   text-align: justify;
-  top: 4.7em;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+}
+
+.div__text__container2 {
+  position: relative;
+  bottom: 0vh;
+  color: rgba(235, 231, 231);
+  /* background: linear-gradient(to top, rgb(46, 41, 58), rgb(39, 82, 82)); */
+  padding: 10px 0;
+  text-align: justify;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+}
+
+.div__text__container2::after {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/dusk.jpg");
+  /* background-image: url("../images/dusk.jpg"); */
+  background-size: cover;
+  opacity: 0.8;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  border-radius: 3em;
+  z-index: -1;
+}
+
+.div__center__box1 {
+  position: relative;
+  color: antiquewhite;
+  top: -4vh;
+  width: 80vw;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1em 0;
+  border-radius: 3em;
+  z-index: 1;
   opacity: 1;
+}
+
+.div__center__box1::after {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../images/dusk.jpg");
+  /* background-image: url("../images/dusk.jpg"); */
+  background-size: cover;
+  opacity: 0.6;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  border-radius: 3em;
+  z-index: -1;
+}
+
+.div__center__box2 {
+  position: relative;
+  color: antiquewhite;
+  top: 50%;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1em;
+  background: rgb(53, 80, 99);
+  border-radius: 3em;
+  z-index: 1;
+  opacity: 1;
+}
+
+.div__center__box2::after {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../images/dusk.jpg");
+  /* background-image: url("../images/dusk.jpg"); */
+  background-size: cover;
+  opacity: 0.6;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  border-radius: 3em;
+  z-index: -1;
+}
+
+/* Footer */
+.body__footer {
+  flex: 1;
+  color: #dededf;
+  background: linear-gradient(to top, rgb(42, 34, 61), rgb(17, 66, 66));
+  margin-top: 1em 0;
+}
+
+.div__footer--line {
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: space-evenly;
+  margin: 0;
+  top: 50%;
+  padding-top: 1em;
+}
+
+.body__footer i {
+  font-size: 1.5em;
 }

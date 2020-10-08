@@ -3,6 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/6ad08ed8d6.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>$(document).ready(function(){
+      $("#show").click(function(){
+        $("contact").show();
+      });
+    });
+    $(document).ready(function() {
+   $('contact').hide();
+    }); 
+    </script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -27,7 +38,7 @@
           <ul id="nav__links" class="nav__links">
             <li id="link-home" class="nav__item" href="#home">Home</li>
             <li id="link-about" class="nav__item" href="#about">About</li>
-            <li id="link-work" class="nav__item" href="#work">Work</li>
+            <!-- <li id="link-work" class="nav__item" href="#work">Work</li> -->
             <li id="link-contact" class="nav__item" href="#contact">Contact</li>
             <!-- <a href="javascript:void(0);" class="menu-icon" onclick="mobileMenu()">
                     <i class="fa fa-bars"></i></a> -->
@@ -57,8 +68,16 @@
                       </p>
                     </div>
                   </div>
+                  <div class="div__text__container1b">
+                    <div class="div__center__box1b">
+                      <h3 style="text-align: center">David W. Bruce</h3>
+                      <h4>“Think off-center.” – George Carlin</h4>
+                    </div>
+                  </div>
                 </div>
+                <div class="blurry"></div>
               </div>
+
               <div class="bgimg-2"></div>
               <div class="div__transparent">
                 <div class="div__text__container2">
@@ -108,7 +127,29 @@
 
             <section id="work" class="content up"></section>
 
-            <section id="contact" class="content left"></section>
+            <section id="contact" class="content left">
+              <div class="bgimg-1">
+                <div class="div__transparent">
+                  <div class="div__text__container1">
+                    <div class="div__center__box1">
+                      <h3 style="text-align: center">David W. Bruce</h3>
+                      <address>
+                        1517 Holmes Circle<br />
+                        Franklin, TN 37064
+                      </address>
+                      <button id="show"><i title="Show Phone Number & Email" class="fas fa-phone-square-alt"></i></button>
+                      <contact>
+                        <phone>
+                          <a href="tel:404-567-3122">(404) 567-3122</a><br />
+                        </phone>
+                        <email>
+                          <a href="mailto:davidbrucetn@gmail.com">davidbrucetn@gmail.com</a>
+            
+                        </contact>
+                      </p>
+                    </div>
+                  </div>
+            </section>
           </main>
         </div>
       </div>
@@ -202,6 +243,10 @@
           x.className = "nav__links";
         }
       }
+
+      
     </script>
+    
+    
   </body>
 </html>

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 html,
 body {
@@ -9,7 +10,12 @@ body {
   overflow-x: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
 .page__wrapper {
+  font-family: "Proza Libre", sans-serif;
   display: flex;
   flex-flow: column nowrap;
   min-height: 100vh;
@@ -247,6 +253,10 @@ main > section {
   background-repeat: no-repeat;
 }
 
+#contact a {
+  color: #15e248de;
+}
+
 .activeSection {
   transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
@@ -280,7 +290,13 @@ main > section {
   height: 100%;
   opacity: 0.8;
 }
-
+.blurry {
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  left: 30px;
+  bottom: 25px;
+}
 .bgimg-2 {
   background-image: url("../images/franklinbackground.jpg");
   min-height: 100%;
@@ -330,9 +346,52 @@ main > section {
   z-index: -1;
 }
 
+.div__text__container1b {
+  position: relative;
+  top: 50vh;
+  color: rgba(235, 231, 231);
+  padding: 10px 10px;
+  text-align: justify;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+}
+.div__center__box1b {
+  position: relative;
+  color: antiquewhite;
+  top: -4vh;
+  width: 80vw;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1em 1em;
+  border-radius: 3em;
+  z-index: 1;
+  opacity: 1;
+}
+.div__center__box1b::after {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../images/dusk.jpg");
+  /* background-image: url("../images/dusk.jpg"); */
+  background-size: cover;
+  top: 10vh;
+  height: auto;
+  opacity: 0.6;
+  padding: 1em 1em;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  border-radius: 3em;
+  z-index: -1;
+}
+
 .div__text__container2 {
   position: relative;
-  bottom: 0vh;
+  top: 0vh;
   color: rgba(235, 231, 231);
   /* background: linear-gradient(to top, rgb(46, 41, 58), rgb(39, 82, 82)); */
   padding: 10px 0;
@@ -344,7 +403,7 @@ main > section {
 }
 
 .div__text__container2::after {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(175, 210, 233, 0.6), rgba(240, 156, 77, 0.6)),
     url("../images/dusk.jpg");
   /* background-image: url("../images/dusk.jpg"); */
   background-size: cover;
@@ -355,7 +414,7 @@ main > section {
   bottom: 0;
   right: 0;
   position: absolute;
-  border-radius: 3em;
+  /* border-radius: 3em; */
   z-index: -1;
 }
 

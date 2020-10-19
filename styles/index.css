@@ -232,14 +232,66 @@ main > section {
   color: rgba(235, 231, 231);
 }
 
-.image__resume {
+.div__image__resume {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  margin: 3em;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: auto;
+  align-content: center;
 }
-.image__resume > img {
-  width: 75%;
+
+.div__image__resume::after {
+  display: block;
+  margin: 2px;
+  flex: 999 999 auto;
+}
+
+.div__img__gif {
+  flex: 0 0 auto;
+  margin: 2px;
+  background-color: #0088a9;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: auto;
+  align-content: center;
+  border-radius: 2em;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 55.8px 33.4px rgba(36, 9, 185, 0.086), 0 100px 80px rgba(57, 6, 124, 0.12);
+}
+
+.div__img__gif::after {
+  display: block;
+  margin: 2px;
+  flex: 999 999 auto;
+}
+
+.img__gif {
+  flex: 1 1 auto;
+  margin: 1em;
+  align-self: center;
+  border: 0.3em solid rgb(17, 66, 66);
+  border-radius: 2em;
+  box-shadow: 0 2.8px 2.2px rgba(164, 4, 204, 0.068),
+    6.7px 6.7px 5.3px rgba(164, 4, 204, 0.068),
+    12.5px 12.5px 10px rgba(197, 45, 197, 0.06),
+    22.3px 22.3px 17.9px rgba(121, 11, 136, 0.072),
+    41.8px 41.8px 33.4px rgba(151, 5, 132, 0.086),
+    0 100px 75px rgba(151, 5, 151, 0.12);
+}
+
+.object__resume {
+  flex: 1 1 auto;
+  margin: 2px;
+  border-radius: 2em;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 #work {

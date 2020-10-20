@@ -254,6 +254,9 @@ main > section {
 .div__img__gif {
   flex: 0 0 none;
   margin: 1em;
+  max-width: 50vw;
+  position: relative;
+  left: 23vw;
   border-radius: 2em;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
@@ -303,7 +306,6 @@ object {
 .div__tech__container .div__tech__img {
   /* margin: 10px; */
   position: relative;
-
   left: 40vw;
   margin: 7em -25%;
   animation: slide 4s 1;
